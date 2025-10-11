@@ -42,7 +42,7 @@
 
 ## 🔗 Link do Projeto:
 
-➡️ (https://octortools.github.io/octor/)
+➡️ https://octortools.github.io/octor/
 
 ---
 
