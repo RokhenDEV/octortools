@@ -7,7 +7,7 @@
 
 > Interface moderna, responsiva e acessível diretamente pelo navegador.
 
-![Image](https://github.com/user-attachments/assets/474024b4-2aa7-4a03-80f1-9c9cd8222403)
+![Image](https://github.com/user-attachments/assets/c6bfffc4-625d-4ed4-a260-c6e84e60537c)
 
 ---
 
