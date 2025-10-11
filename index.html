@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduTools</title>
+    <title>OctorTools</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -449,9 +449,9 @@
     <div class="container">
         <header>
             <div class="logo-container">
-                <img src="https://github.com/octortools/octor/raw/main/logo_octortools.png" alt="EduTools Logo" class="logo">
+                <img src="https://github.com/octortools/octor/raw/main/logo_octortools.png" alt="OctorTools Logo" class="logo">
                 <div class="title-container">
-                    <h1>EduTools</h1>
+                    <h1>OctorTools</h1>
                     <div class="description">
                         Central de acesso rápido a ferramentas educacionais, de produtividade, IA's e diversas outras funcionalidades para otimizar seu aprendizado e trabalho.
                     </div>
@@ -1108,7 +1108,7 @@
                 <div class="back-btn btn" onclick="backToMain()"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-info-circle"></i>
-                    <h2>EduTools - V2.5 (2025)</h2>
+                    <h2>OctorTools - V2.5 (2025)</h2>
                 </div>
                 <p><strong>Napkin AI:</strong> Ferramenta para criação de relatórios e tabelas</p>
                 <p><strong>Gamma AI:</strong> Criação de apresentações automáticas</p>
@@ -1144,7 +1144,7 @@
             
             <div class="footer-buttons">
                 <a href="https://github.com/JSofc/EduTools" target="_blank" class="footer-btn github-btn">
-                    <i class="fab fa-github"></i> EduTools
+                    <i class="fab fa-github"></i> OctorTools
                 </a>
                 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=edutools.ofc@gmail.com" target="_blank" class="footer-btn gmail-btn">
                     <i class="fas fa-envelope"></i> edutools.ofc
@@ -1269,8 +1269,10 @@
             document.querySelectorAll('.submenu-item').forEach(item => {
                 const text = item.querySelector('span').textContent;
                 const onclick = item.getAttribute('onclick');
-                const detailId = onclick.match(/showDetails\('([^']+)'\)/)[1];
-                searchableItems.push({ text, detailId });
+                if (onclick && onclick.match(/showDetails\('([^']+)'\)/)) {
+                    const detailId = onclick.match(/showDetails\('([^']+)'\)/)[1];
+                    searchableItems.push({ text, detailId });
+                }
             });
             
             searchInput.addEventListener('input', function() {
