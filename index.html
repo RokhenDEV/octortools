@@ -22,6 +22,7 @@
         
         .container {
             max-width: 1200px;
+            width: 100%;
             margin: 0 auto;
             padding: 20px;
         }
@@ -31,6 +32,7 @@
             padding: 40px 0 30px;
             margin-bottom: 40px;
             position: relative;
+            width: 100%;
         }
         
         .logo-container {
@@ -88,9 +90,10 @@
         
         .menu {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 25px;
             margin-bottom: 50px;
+            justify-items: center;
         }
         
         .menu-item {
@@ -106,6 +109,7 @@
             align-items: center;
             justify-content: center;
             min-height: 160px;
+            width: 100%;
         }
         
         .menu-item:hover {
@@ -135,12 +139,14 @@
             border: 1px solid #2a2a2a;
             border-radius: 12px;
             margin-bottom: 30px;
+            width: 100%;
         }
         
         .submenu-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 20px;
+            justify-items: center;
         }
         
         .submenu-item {
@@ -152,6 +158,7 @@
             display: flex;
             align-items: center;
             border-radius: 8px;
+            width: 100%;
         }
         
         .submenu-item:hover {
@@ -173,6 +180,7 @@
             border: 1px solid #2a2a2a;
             border-radius: 12px;
             margin-bottom: 30px;
+            width: 100%;
         }
         
         .details p {
@@ -187,6 +195,7 @@
             flex-wrap: wrap;
             gap: 15px;
             margin-top: 30px;
+            justify-content: center;
         }
         
         .btn {
@@ -231,6 +240,7 @@
             margin-top: 60px;
             color: #888888;
             font-size: 0.9rem;
+            width: 100%;
         }
         
         .back-btn {
@@ -273,6 +283,7 @@
             display: flex;
             align-items: center;
             margin-bottom: 30px;
+            justify-content: center;
         }
         
         .section-title i {
@@ -1145,28 +1156,85 @@
     <div id="copy-notification" class="copy-notification">Texto copiado para a área de transferência!</div>
     
     <script>
-        function showSubmenu(submenuId) {
-            document.getElementById('menu-principal').style.display = 'none';
+        const historyStack = [];
+        let currentState = 'menu-principal';
+        
+        function navigateTo(screenId) {
+            if (currentState) {
+                historyStack.push(currentState);
+            }
+            
+            currentState = screenId;
+            
+            updateDisplay();
+            
+            centerScreen();
+            
+            window.history.pushState({screenId}, '', `#${screenId}`);
+        }
+        
+        function navigateBack() {
+            if (historyStack.length > 0) {
+                currentState = historyStack.pop();
+                updateDisplay();
+                
+                centerScreen();
+                
+                window.history.replaceState({screenId: currentState}, '', `#${currentState}`);
+            }
+        }
+        
+        function centerScreen() {
+            setTimeout(() => {
+                const activeElement = document.querySelector('.submenu:not([style*="display: none"]), .details:not([style*="display: none"])');
+                
+                if (activeElement) {
+                    const elementRect = activeElement.getBoundingClientRect();
+                    const absoluteElementTop = elementRect.top + window.pageYOffset;
+                    const middle = absoluteElementTop - (window.innerHeight / 2) + (elementRect.height / 2);
+                    
+                    window.scrollTo({
+                        top: middle,
+                        behavior: 'smooth'
+                    });
+                } else {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                }
+            }, 100);
+        }
+        
+        function updateDisplay() {
+            // Esconde todos os elementos
             hideAllSubmenus();
             hideAllDetails();
-            document.getElementById(submenuId).style.display = 'block';
+            document.getElementById('menu-principal').style.display = 'none';
+            
+            if (currentState === 'menu-principal') {
+                document.getElementById('menu-principal').style.display = 'block';
+            } else if (currentState.startsWith('submenu-')) {
+                document.getElementById(currentState).style.display = 'block';
+            } else if (currentState.startsWith('detalhes-') || currentState.startsWith('prompts-') || currentState === 'descricao-geral') {
+                document.getElementById(currentState).style.display = 'block';
+            }
+        }
+        
+        function showSubmenu(submenuId) {
+            navigateTo(submenuId);
         }
         
         function showDetails(detailsId) {
-            hideAllSubmenus();
-            hideAllDetails();
-            document.getElementById(detailsId).style.display = 'block';
+            navigateTo(detailsId);
         }
         
         function backToMain() {
-            hideAllSubmenus();
-            hideAllDetails();
-            document.getElementById('menu-principal').style.display = 'block';
+            navigateTo('menu-principal');
         }
         
         function backToSubmenu(submenuId) {
-            hideAllDetails();
-            document.getElementById(submenuId).style.display = 'block';
+            navigateTo(submenuId);
         }
         
         function hideAllSubmenus() {
@@ -1244,10 +1312,25 @@
         }
         
         document.addEventListener('DOMContentLoaded', function() {
-            hideAllSubmenus();
-            hideAllDetails();
-            document.getElementById('menu-principal').style.display = 'block';
+            const hash = window.location.hash.substring(1);
+            if (hash) {
+                currentState = hash;
+            }
+            
+            updateDisplay();
             initSearch();
+            
+            window.addEventListener('popstate', function(event) {
+                if (event.state && event.state.screenId) {
+                    currentState = event.state.screenId;
+                    updateDisplay();
+                    centerScreen();
+                } else {
+                    currentState = 'menu-principal';
+                    updateDisplay();
+                    centerScreen();
+                }
+            });
         });
     </script>
 </body>
