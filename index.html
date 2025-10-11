@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta name="google-site-verification" content="BgcaFc87ilD9QVPzNS2UTMB-IQDapvIKJzjCoi55AUc" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EduTools</title>
@@ -15,7 +14,7 @@
         }
         
         body {
-            background: linear-gradient(to bottom, #555, #000, #555);
+            background-color: #2a2a2a;
             color: #f0f0f0;
             line-height: 1.6;
             min-height: 100vh;
@@ -105,7 +104,7 @@
         }
         
         .menu-item {
-            background: linear-gradient(to bottom right, #1a1a1a, #151515);
+            background: #1a1a1a;
             padding: 25px 20px;
             border: 1px solid #333;
             border-radius: 8px;
@@ -123,7 +122,7 @@
             transform: translateY(-5px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
             border-color: #555;
-            background: linear-gradient(to bottom right, #222, #1a1a1a);
+            background: #2d2d2d;
         }
         
         .menu-item i {
@@ -139,7 +138,7 @@
         
         .submenu {
             display: none;
-            background: linear-gradient(to bottom, #151515, #1a1a1a);
+            background: #1a1a1a;
             padding: 30px;
             border: 1px solid #333;
             border-radius: 8px;
@@ -176,7 +175,7 @@
         
         .details {
             display: none;
-            background: linear-gradient(to bottom, #151515, #1a1a1a);
+            background: #1a1a1a;
             padding: 30px;
             border: 1px solid #333;
             border-radius: 8px;
@@ -428,11 +427,11 @@
     <div class="container">
         <header>
             <div class="logo-container">
-                <img src="https://github.com/JSofc/EduTools/blob/main/logo_edutools.png?raw=true" alt="EduTools Logo" class="logo">
+                <img src="https://github.com/octortools/octor/raw/main/logo_octortools.png" alt="EduTools Logo" class="logo">
                 <div class="title-container">
-                    <h1>EDUTOOLS</h1>
+                    <h1>EduTools</h1>
                     <div class="description">
-                        UM CENTRAL DE ACESSO RÁPIDO A FERRAMENTAS EDUCACIONAIS, DE PRODUTIVIDADE, IA'S E DIVERSAS OUTRAS FUNCIONALIDADES.
+                        Um central de acesso rápido a ferramentas educacionais, de produtividade, IA's e diversas outras funcionalidades.
                     </div>
                 </div>
             </div>
@@ -446,434 +445,452 @@
         
         <main>
             <div id="menu-principal">
-                <h2>MENU PRINCIPAL</h2>
+                <h2>Menu principal</h2>
                 <div class="menu">
                     <div class="menu-item" onclick="showSubmenu('submenu-ia')">
                         <i class="fas fa-robot"></i>
-                        <span>FERRAMENTAS DE INTELIGÊNCIA ARTIFICIAL</span>
+                        <span>Usar Ferramentas de inteligência artificial</span>
                     </div>
                     <div class="menu-item" onclick="showSubmenu('submenu-docs')">
                         <i class="fas fa-file-alt"></i>
-                        <span>DOCUMENTOS E REFERÊNCIAS</span>
+                        <span>Criar e editar Documentos e referências</span>
                     </div>
                     <div class="menu-item" onclick="showSubmenu('submenu-prod')">
                         <i class="fas fa-briefcase"></i>
-                        <span>PRODUTIVIDADE E ESCRITÓRIO</span>
+                        <span>Ferramentas para Produtividade e escritório</span>
                     </div>
                     <div class="menu-item" onclick="showSubmenu('submenu-simul')">
                         <i class="fas fa-vial"></i>
-                        <span>SIMULAÇÕES EDUCATIVAS</span>
+                        <span>Fazer Simulações educativas</span>
                     </div>
                     <div class="menu-item" onclick="showSubmenu('submenu-prompts')">
                         <i class="fas fa-comment-dots"></i>
-                        <span>PROMPTS AVANÇADOS PARA IA'S</span>
+                        <span>Prompts avançados para IA's</span>
                     </div>
                     <div class="menu-item" onclick="showSubmenu('submenu-edu')">
                         <i class="fas fa-graduation-cap"></i>
-                        <span>FERRAMENTAS EDUCACIONAIS</span>
+                        <span>Ferramentas educacionais</span>
                     </div>
                     <div class="menu-item" onclick="showDetails('descricao-geral')">
                         <i class="fas fa-info-circle"></i>
-                        <span>INFORMAÇÕES GERAIS</span>
+                        <span>Informações gerais</span>
                     </div>
                 </div>
             </div>
             
             <div id="submenu-ia" class="submenu">
-                <div class="back-btn btn" onclick="backToMain()"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToMain()"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-robot"></i>
-                    <h2>FERRAMENTAS DE INTELIGÊNCIA ARTIFICIAL</h2>
+                    <h2>Usar Ferramentas de inteligência artificial</h2>
                 </div>
                 <div class="submenu-grid">
                     <div class="submenu-item" onclick="showDetails('detalhes-napkin')">
                         <i class="fas fa-chart-bar"></i>
-                        <span>NAPKIN AI - Relatórios, figuras e tabelas</span>
+                        <span>Napkin AI - Relatórios, figuras e tabelas</span>
                     </div>
                     <div class="submenu-item" onclick="showDetails('detalhes-gamma')">
-                        <i class="fas fa-presentation"></i>
-                        <span>GAMMA AI - Slides dinâmicos</span>
+                        <i class="fas fa-sliders-h"></i>
+                        <span>Gamma AI - Slides dinâmicos</span>
                     </div>
                     <div class="submenu-item" onclick="showDetails('detalhes-flexclip')">
                         <i class="fas fa-chart-pie"></i>
-                        <span>FLEXCLIP - Gráficos e infográficos</span>
+                        <span>FlexClip - Gráficos e infográficos</span>
                     </div>
                     <div class="submenu-item" onclick="showDetails('detalhes-dreamina')">
                         <i class="fas fa-images"></i>
-                        <span>DREAMINA - Imagens e vídeos</span>
+                        <span>Dreamina - Imagens e vídeos</span>
                     </div>
                     <div class="submenu-item" onclick="showDetails('detalhes-copilot')">
                         <i class="fas fa-search"></i>
-                        <span>COPILOT - Pesquisa com precisão</span>
+                        <span>Copilot - Pesquisa com precisão</span>
                     </div>
                     <div class="submenu-item" onclick="showDetails('detalhes-deepseek')">
                         <i class="fas fa-calculator"></i>
-                        <span>DEEPSEEK - Cálculos avançados e pesquisa</span>
+                        <span>DeepSeek - Cálculos avançados e pesquisa</span>
                     </div>
                     <div class="submenu-item" onclick="showDetails('detalhes-chatpdf')">
                         <i class="fas fa-file-pdf"></i>
-                        <span>CHATPDF - Leitor inteligente de PDFs</span>
+                        <span>ChatPDF - Leitor inteligente de PDFs</span>
                     </div>
                     <div class="submenu-item" onclick="showDetails('detalhes-chatgpt')">
                         <i class="fas fa-comments"></i>
-                        <span>CHATGPT - Conversa com IA</span>
+                        <span>ChatGPT - Conversa com IA</span>
                     </div>
                     <div class="submenu-item" onclick="showDetails('detalhes-gemini')">
                         <i class="fab fa-google"></i>
-                        <span>GEMINI - Assistente do Google</span>
+                        <span>Gemini - Assistente do Google</span>
                     </div>
                     <div class="submenu-item" onclick="showDetails('detalhes-archimeds')">
                         <i class="fas fa-heartbeat"></i>
-                        <span>ARCHIMEDS - Ferramenta de estudo médico</span>
+                        <span>Archimeds - Ferramenta de estudo médico</span>
                     </div>
                 </div>
             </div>
             
             <div id="detalhes-napkin" class="details">
-                <div class="back-btn btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-chart-bar"></i>
-                    <h2>NAPKIN AI - DETALHES</h2>
+                    <h2>Napkin AI - Detalhes</h2>
                 </div>
                 <p>Ferramenta para criação de relatórios, figuras e tabelas com IA. Versão gratuita com limites diários.</p>
                 <div class="btn-container">
-                    <a href="https://www.napkin.ai/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
-                    <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
-                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+                    <a href="https://www.napkin.ai/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Acessar</a>
+                    <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> Voltar</div>
+                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> Menu principal</div>
                 </div>
             </div>
             
             <div id="detalhes-gamma" class="details">
-                <div class="back-btn btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
-                    <i class="fas fa-presentation"></i>
-                    <h2>GAMMA AI - DETALHES</h2>
+                    <i class="fas fa-sliders-h"></i>
+                    <h2>Gamma AI - Detalhes</h2>
                 </div>
                 <p>Criação de apresentações automáticas com design responsivo. Templates profissionais adaptáveis.</p>
                 <div class="btn-container">
-                    <a href="https://gamma.app/pt-br" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
-                    <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
-                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+                    <a href="https://gamma.app/pt-br" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Acessar</a>
+                    <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> Voltar</div>
+                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> Menu principal</div>
                 </div>
             </div>
             
             <div id="detalhes-flexclip" class="details">
-                <div class="back-btn btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-chart-pie"></i>
-                    <h2>FLEXCLIP - DETALHES</h2>
+                    <h2>FlexClip - Detalhes</h2>
                 </div>
                 <p>Editor online para criação de gráficos, vídeos e infográficos com biblioteca de templates.</p>
                 <div class="btn-container">
-                    <a href="https://www.flexclip.com/pt/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
-                    <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
-                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+                    <a href="https://www.flexclip.com/pt/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Acessar</a>
+                    <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> Voltar</div>
+                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> Menu principal</div>
                 </div>
             </div>
             
             <div id="detalhes-dreamina" class="details">
-                <div class="back-btn btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-images"></i>
-                    <h2>DREAMINA - DETALHES</h2>
+                    <h2>Dreamina - Detalhes</h2>
                 </div>
-                <p>Plataforma de geração de imagens and vídeos via IA para conteúdo criativo com integração ao CapCut.</p>
+                <p>Plataforma de geração de imagens e vídeos via IA para conteúdo criativo com integração ao CapCut.</p>
                 <div class="btn-container">
-                    <a href="https://dreamina.capcut.com/ai-tool/generate" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
-                    <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
-                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+                    <a href="https://dreamina.capcut.com/ai-tool/generate" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Acessar</a>
+                    <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> Voltar</div>
+                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> Menu principal</div>
                 </div>
             </div>
             
             <div id="detalhes-copilot" class="details">
-                <div class="back-btn btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-search"></i>
-                    <h2>COPILOT - DETALHES</h2>
+                    <h2>Copilot - Detalhes</h2>
                 </div>
                 <p>Assistente de IA integrado ao Bing para pesquisas contextualizadas com geração de código.</p>
                 <div class="btn-container">
-                    <a href="https://copilot.microsoft.com/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
-                    <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
-                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+                    <a href="https://copilot.microsoft.com/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Acessar</a>
+                    <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> Voltar</div>
+                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> Menu principal</div>
                 </div>
             </div>
             
             <div id="detalhes-deepseek" class="details">
-                <div class="back-btn btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-calculator"></i>
-                    <h2>DEEPSEEK - DETALHES</h2>
+                    <h2>DeepSeek - Detalhes</h2>
                 </div>
                 <p>Assistente avançado para cálculos matemáticos, programação e análise de dados com suporte a upload.</p>
                 <div class="btn-container">
-                    <a href="https://www.deepseek.com/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
-                    <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
-                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+                    <a href="https://www.deepseek.com/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Acessar</a>
+                    <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> Voltar</div>
+                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> Menu principal</div>
                 </div>
             </div>
             
             <div id="detalhes-chatpdf" class="details">
-                <div class="back-btn btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-file-pdf"></i>
-                    <h2>CHATPDF - DETALHES</h2>
+                    <h2>ChatPDF - Detalhes</h2>
                 </div>
                 <p>Leitor inteligente de PDFs com extração de informações via IA e resumo automático.</p>
                 <div class="btn-container">
-                    <a href="https://www.chatpdf.com/pt" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
-                    <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
-                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+                    <a href="https://www.chatpdf.com/pt" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Acessar</a>
+                    <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> Voltar</div>
+                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> Menu principal</div>
                 </div>
             </div>
             
             <div id="detalhes-chatgpt" class="details">
-                <div class="back-btn btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-comments"></i>
-                    <h2>CHATGPT - DETALHES</h2>
+                    <h2>ChatGPT - Detalhes</h2>
                 </div>
                 <p>Assistente de IA para conversas naturais e resolução multidisciplinar com memória de contexto.</p>
                 <div class="btn-container">
-                    <a href="https://chatgpt.com/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
-                    <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
-                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+                    <a href="https://chatgpt.com/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Acessar</a>
+                    <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> Voltar</div>
+                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> Menu principal</div>
                 </div>
             </div>
             
             <div id="detalhes-gemini" class="details">
-                <div class="back-btn btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fab fa-google"></i>
-                    <h2>GEMINI - DETALHES</h2>
+                    <h2>Gemini - Detalhes</h2>
                 </div>
                 <p>Assistente de IA do Google com integração ao ecossistema de apps e geração multimodal.</p>
                 <div class="btn-container">
-                    <a href="https://gemini.google.com/app?hl=pt-BR" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
-                    <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
-                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+                    <a href="https://gemini.google.com/app?hl=pt-BR" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Acessar</a>
+                    <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> Voltar</div>
+                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> Menu principal</div>
                 </div>
             </div>
             
             <div id="detalhes-archimeds" class="details">
-                <div class="back-btn btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-heartbeat"></i>
-                    <h2>ARCHIMEDS - DETALHES</h2>
+                    <h2>Archimeds - Detalhes</h2>
                 </div>
                 <p>Plataforma especializada em estudos médicos com IA para diagnóstico e pesquisa clínica.</p>
                 <div class="btn-container">
-                    <a href="https://app.archimeds.co/welcome" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
-                    <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
-                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+                    <a href="https://app.archimeds.co/welcome" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Acessar</a>
+                    <div class="btn" onclick="backToSubmenu('submenu-ia')"><i class="fas fa-arrow-left"></i> Voltar</div>
+                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> Menu principal</div>
                 </div>
             </div>
             
             <div id="submenu-docs" class="submenu">
-                <div class="back-btn btn" onclick="backToMain()"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToMain()"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-file-alt"></i>
-                    <h2>DOCUMENTOS E REFERÊNCIAS</h2>
+                    <h2>Criar e editar Documentos e referências</h2>
                 </div>
                 <div class="submenu-grid">
                     <div class="submenu-item" onclick="showDetails('detalhes-stirling')">
                         <i class="fas fa-file-pdf"></i>
-                        <span>STIRLING PDF - Ferramentas para PDFs</span>
+                        <span>Stirling PDF - Ferramentas para PDFs</span>
                     </div>
                     <div class="submenu-item" onclick="showDetails('detalhes-costorm')">
                         <i class="fas fa-newspaper"></i>
-                        <span>CO-STORM - Artigos com referências</span>
+                        <span>Co-Storm - Artigos com referências</span>
                     </div>
                     <div class="submenu-item" onclick="showDetails('detalhes-docs')">
                         <i class="fas fa-file-word"></i>
-                        <span>GOOGLE DOCS - Editor de documentos</span>
+                        <span>Google Docs - Editor de documentos</span>
                     </div>
                     <div class="submenu-item" onclick="showDetails('detalhes-academico')">
                         <i class="fas fa-graduation-cap"></i>
-                        <span>GOOGLE ACADÉMICO - Pesquisa acadêmica</span>
+                        <span>Google Acadêmico - Pesquisa acadêmica</span>
                     </div>
                 </div>
             </div>
             
             <div id="detalhes-stirling" class="details">
-                <div class="back-btn btn" onclick="backToSubmenu('submenu-docs')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToSubmenu('submenu-docs')"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-file-pdf"></i>
-                    <h2>STIRLING PDF - DETALHES</h2>
+                    <h2>Stirling PDF - Detalhes</h2>
                 </div>
                 <p>Suíte completa para manipulação de PDFs com processamento local e privacidade garantida.</p>
                 <div class="btn-container">
-                    <a href="https://stirlingpdf.io/?lang=pt_BR" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
-                    <div class="btn" onclick="backToSubmenu('submenu-docs')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
-                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+                    <a href="https://stirlingpdf.io/?lang=pt_BR" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Acessar</a>
+                    <div class="btn" onclick="backToSubmenu('submenu-docs')"><i class="fas fa-arrow-left"></i> Voltar</div>
+                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> Menu principal</div>
                 </div>
             </div>
             
             <div id="detalhes-costorm" class="details">
-                <div class="back-btn btn" onclick="backToSubmenu('submenu-docs')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToSubmenu('submenu-docs')"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-newspaper"></i>
-                    <h2>CO-STORM - DETALHES</h2>
+                    <h2>Co-Storm - Detalhes</h2>
                 </div>
                 <p>Gerador de artigos acadêmicos com fontes verificadas e formatação automática em normas ABNT/APA.</p>
                 <div class="btn-container">
-                    <a href="https://storm.genie.stanford.edu/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
-                    <div class="btn" onclick="backToSubmenu('submenu-docs')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
-                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+                    <a href="https://storm.genie.stanford.edu/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Acessar</a>
+                    <div class="btn" onclick="backToSubmenu('submenu-docs')"><i class="fas fa-arrow-left"></i> Voltar</div>
+                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> Menu principal</div>
                 </div>
             </div>
             
             <div id="detalhes-docs" class="details">
-                <div class="back-btn btn" onclick="backToSubmenu('submenu-docs')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToSubmenu('submenu-docs')"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-file-word"></i>
-                    <h2>GOOGLE DOCS - DETALHES</h2>
+                    <h2>Google Docs - Detalhes</h2>
                 </div>
                 <p>Editor de documentos online com colaboração em tempo real e histórico de versões.</p>
                 <div class="btn-container">
-                    <a href="https://docs.google.com/document/u/0/?hl=pt-BR" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
-                    <div class="btn" onclick="backToSubmenu('submenu-docs')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
-                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+                    <a href="https://docs.google.com/document/u/0/?hl=pt-BR" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Acessar</a>
+                    <div class="btn" onclick="backToSubmenu('submenu-docs')"><i class="fas fa-arrow-left"></i> Voltar</div>
+                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> Menu principal</div>
                 </div>
             </div>
             
             <div id="detalhes-academico" class="details">
-                <div class="back-btn btn" onclick="backToSubmenu('submenu-docs')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToSubmenu('submenu-docs')"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-graduation-cap"></i>
-                    <h2>GOOGLE ACADÉMICO - DETALHES</h2>
+                    <h2>Google Acadêmico - Detalhes</h2>
                 </div>
                 <p>Ferramenta de pesquisa de literatura científica com filtros avançados e artigos peer-reviewed.</p>
                 <div class="btn-container">
-                    <a href="https://scholar.google.com/?hl=pt-BR" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
-                    <div class="btn" onclick="backToSubmenu('submenu-docs')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
-                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+                    <a href="https://scholar.google.com/?hl=pt-BR" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Acessar</a>
+                    <div class="btn" onclick="backToSubmenu('submenu-docs')"><i class="fas fa-arrow-left"></i> Voltar</div>
+                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> Menu principal</div>
                 </div>
             </div>
             
             <div id="submenu-prod" class="submenu">
-                <div class="back-btn btn" onclick="backToMain()"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToMain()"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-briefcase"></i>
-                    <h2>PRODUTIVIDADE E ESCRITÓRIO</h2>
+                    <h2>Ferramentas para Produtividade e escritório</h2>
                 </div>
                 <div class="submenu-grid">
                     <div class="submenu-item" onclick="showDetails('detalhes-libreoffice')">
-                        <i class="fas fa-office-building"></i>
-                        <span>LIBREOFFICE - Suite Office código-aberto</span>
+                        <i class="fas fa-file-alt"></i>
+                        <span>LibreOffice - Suite Office código-aberto</span>
                     </div>
                     <div class="submenu-item" onclick="showDetails('detalhes-calculadora')">
                         <i class="fas fa-calculator"></i>
-                        <span>CALCULADORA - Calculadora do Windows</span>
+                        <span>Calculadora - Calculadora do Windows</span>
                     </div>
                     <div class="submenu-item" onclick="showDetails('detalhes-notion')">
                         <i class="fas fa-sticky-note"></i>
-                        <span>NOTION - Organização e planejamento</span>
+                        <span>Notion - Organização e planejamento</span>
+                    </div>
+                    <div class="submenu-item" onclick="showDetails('detalhes-docs-prod')">
+                        <i class="fas fa-file-word"></i>
+                        <span>Google Docs - Editor de documentos</span>
                     </div>
                 </div>
             </div>
             
             <div id="detalhes-libreoffice" class="details">
-                <div class="back-btn btn" onclick="backToSubmenu('submenu-prod')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToSubmenu('submenu-prod')"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
-                    <i class="fas fa-office-building"></i>
-                    <h2>LIBREOFFICE - DETALHES</h2>
+                    <i class="fas fa-file-alt"></i>
+                    <h2>LibreOffice - Detalhes</h2>
                 </div>
                 <p>Suíte office gratuita e de código aberto compatível com formatos Microsoft (DOCX, XLSX, PPTX).</p>
                 <div class="btn-container">
-                    <a href="https://pt-br.libreoffice.org/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
-                    <div class="btn" onclick="backToSubmenu('submenu-prod')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
-                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+                    <a href="https://pt-br.libreoffice.org/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Acessar</a>
+                    <div class="btn" onclick="backToSubmenu('submenu-prod')"><i class="fas fa-arrow-left"></i> Voltar</div>
+                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> Menu principal</div>
                 </div>
             </div>
             
             <div id="detalhes-calculadora" class="details">
-                <div class="back-btn btn" onclick="backToSubmenu('submenu-prod')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToSubmenu('submenu-prod')"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-calculator"></i>
-                    <h2>CALCULADORA - DETALHES</h2>
+                    <h2>Calculadora - Detalhes</h2>
                 </div>
                 <p>Calculadora nativa do Windows para operações matemáticas básicas e científicas offline.</p>
                 <div class="btn-container">
-                    <div class="btn btn-primary" onclick="alert('Esta função abre a calculadora do sistema. No navegador, não é possível abrir aplicativos locais.')"><i class="fas fa-external-link-alt"></i> ACESSAR</div>
-                    <div class="btn" onclick="backToSubmenu('submenu-prod')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
-                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+                    <div class="btn btn-primary" onclick="alert('Esta função abre a calculadora do sistema. No navegador, não é possível abrir aplicativos locais.')"><i class="fas fa-external-link-alt"></i> Acessar</div>
+                    <div class="btn" onclick="backToSubmenu('submenu-prod')"><i class="fas fa-arrow-left"></i> Voltar</div>
+                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> Menu principal</div>
                 </div>
             </div>
             
             <div id="detalhes-notion" class="details">
-                <div class="back-btn btn" onclick="backToSubmenu('submenu-prod')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToSubmenu('submenu-prod')"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-sticky-note"></i>
-                    <h2>NOTION - DETALHES</h2>
+                    <h2>Notion - Detalhes</h2>
                 </div>
                 <p>Plataforma all-in-one para organização, notas e gerenciamento de projetos com templates.</p>
                 <div class="btn-container">
-                    <a href="https://www.notion.so/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
-                    <div class="btn" onclick="backToSubmenu('submenu-prod')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
-                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+                    <a href="https://www.notion.so/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Acessar</a>
+                    <div class="btn" onclick="backToSubmenu('submenu-prod')"><i class="fas fa-arrow-left"></i> Voltar</div>
+                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> Menu principal</div>
+                </div>
+            </div>
+            
+            <div id="detalhes-docs-prod" class="details">
+                <div class="back-btn btn" onclick="backToSubmenu('submenu-prod')"><i class="fas fa-arrow-left"></i> Voltar</div>
+                <div class="section-title">
+                    <i class="fas fa-file-word"></i>
+                    <h2>Google Docs - Detalhes</h2>
+                </div>
+                <p>Editor de documentos online com colaboração em tempo real e histórico de versões.</p>
+                <div class="btn-container">
+                    <a href="https://docs.google.com/document/u/0/?hl=pt-BR" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Acessar</a>
+                    <div class="btn" onclick="backToSubmenu('submenu-prod')"><i class="fas fa-arrow-left"></i> Voltar</div>
+                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> Menu principal</div>
                 </div>
             </div>
             
             <div id="submenu-simul" class="submenu">
-                <div class="back-btn btn" onclick="backToMain()"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToMain()"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-vial"></i>
-                    <h2>SIMULAÇÕES EDUCATIVAS</h2>
+                    <h2>Fazer Simulações educativas</h2>
                 </div>
                 <div class="submenu-grid">
                     <div class="submenu-item" onclick="showDetails('detalhes-phet')">
                         <i class="fas fa-flask"></i>
-                        <span>PHET SIMULAÇÕES - Simulações interativas</span>
+                        <span>PhET Simulações - Simulações interativas</span>
                     </div>
                 </div>
             </div>
             
             <div id="detalhes-phet" class="details">
-                <div class="back-btn btn" onclick="backToSubmenu('submenu-simul')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToSubmenu('submenu-simul')"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-flask"></i>
-                    <h2>PHET SIMULAÇÕES - DETALHES</h2>
+                    <h2>PhET Simulações - Detalhes</h2>
                 </div>
                 <p>Plataforma de simulações interativas para ensino de ciências e matemática com conteúdo em português.</p>
                 <div class="btn-container">
-                    <a href="https://phet.colorado.edu/pt_BR/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
-                    <div class="btn" onclick="backToSubmenu('submenu-simul')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
-                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+                    <a href="https://phet.colorado.edu/pt_BR/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Acessar</a>
+                    <div class="btn" onclick="backToSubmenu('submenu-simul')"><i class="fas fa-arrow-left"></i> Voltar</div>
+                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> Menu principal</div>
                 </div>
             </div>
             
             <div id="submenu-prompts" class="submenu">
-                <div class="back-btn btn" onclick="backToMain()"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToMain()"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-comment-dots"></i>
-                    <h2>PROMPTS AVANÇADOS PARA IA'S</h2>
+                    <h2>Prompts avançados para IA's</h2>
                 </div>
                 <p>Utilize esses prompts para extrair o máximo potencial das IAs, economizando tempo e melhorando resultados.</p>
                 <div class="submenu-grid">
                     <div class="submenu-item" onclick="showDetails('prompts-motivacionais')">
                         <i class="fas fa-fire"></i>
-                        <span>PROMPTS MOTIVACIONAIS</span>
+                        <span>Prompts motivacionais</span>
                     </div>
                     <div class="submenu-item" onclick="showDetails('prompts-estudar')">
                         <i class="fas fa-book"></i>
-                        <span>PROMPTS PARA ESTUDAR</span>
+                        <span>Prompts para estudar</span>
                     </div>
                     <div class="submenu-item" onclick="showDetails('prompts-produtividade')">
                         <i class="fas fa-tasks"></i>
-                        <span>PROMPTS PARA PRODUTIVIDADE</span>
+                        <span>Prompts para produtividade</span>
                     </div>
                 </div>
             </div>
             
             <div id="prompts-motivacionais" class="details">
-                <div class="back-btn btn" onclick="backToSubmenu('submenu-prompts')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToSubmenu('submenu-prompts')"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-fire"></i>
-                    <h2>PROMPTS MOTIVACIONAIS</h2>
+                    <h2>Prompts motivacionais</h2>
                 </div>
                 <div class="prompt-text" onclick="copyToClipboard('Me conte algo que me faça sentir que todo esforço que eu coloco hoje constrói o amanhã que eu quero.')">
-                    "Me conte algo que me faça sentir que todo esforço que eu coloco hoje constrói o amanhã que eu quero."
+                    "Me conte algo que me faça sentir que todo esforço que eu coloca hoje constrói o amanhã que eu quero."
                 </div>
                 <div class="prompt-text" onclick="copyToClipboard('Me conte algo que vai me machucar tanto que eu perceba que desistir agora vai doer muito mais depois.')">
                     "Me conte algo que vai me machucar tanto que eu perceba que desistir agora vai doer muito mais depois."
@@ -882,16 +899,16 @@
                     "Me conte algo que me faça ver que recomeçar hoje é o que vai me salvar amanhã."
                 </div>
                 <div class="btn-container">
-                    <div class="btn" onclick="backToSubmenu('submenu-prompts')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
-                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+                    <div class="btn" onclick="backToSubmenu('submenu-prompts')"><i class="fas fa-arrow-left"></i> Voltar</div>
+                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> Menu principal</div>
                 </div>
             </div>
             
             <div id="prompts-estudar" class="details">
-                <div class="back-btn btn" onclick="backToSubmenu('submenu-prompts')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToSubmenu('submenu-prompts')"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-book"></i>
-                    <h2>PROMPTS PARA ESTUDAR</h2>
+                    <h2>Prompts para estudar</h2>
                 </div>
                 <div class="prompt-text" onclick="copyToClipboard('Quero aprender sobre [tema]. Identifique os 20% mais importantes que me ajudarão a entender 80% dele.')">
                     "Quero aprender sobre [tema]. Identifique os 20% mais importantes que me ajudarão a entender 80% dele."
@@ -903,16 +920,16 @@
                     "Aja como professor de [assunto]. Foque nos pontos mais prováveis de cair na prova."
                 </div>
                 <div class="btn-container">
-                    <div class="btn" onclick="backToSubmenu('submenu-prompts')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
-                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+                    <div class="btn" onclick="backToSubmenu('submenu-prompts')"><i class="fas fa-arrow-left"></i> Voltar</div>
+                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> Menu principal</div>
                 </div>
             </div>
             
             <div id="prompts-produtividade" class="details">
-                <div class="back-btn btn" onclick="backToSubmenu('submenu-prompts')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToSubmenu('submenu-prompts')"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-tasks"></i>
-                    <h2>PROMPTS PARA PRODUTIVIDADE</h2>
+                    <h2>Prompts para produtividade</h2>
                 </div>
                 <div class="prompt-text" onclick="copyToClipboard('Crie um plano de 4 semanas para aumentar minha produtividade em [área].')">
                     "Crie um plano de 4 semanas para aumentar minha produtividade em [área]."
@@ -924,177 +941,177 @@
                     "Aja como um coach de produtividade. Analise minha rotina e proponha 5 mudanças."
                 </div>
                 <div class="btn-container">
-                    <div class="btn" onclick="backToSubmenu('submenu-prompts')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
-                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+                    <div class="btn" onclick="backToSubmenu('submenu-prompts')"><i class="fas fa-arrow-left"></i> Voltar</div>
+                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> Menu principal</div>
                 </div>
             </div>
             
             <div id="submenu-edu" class="submenu">
-                <div class="back-btn btn" onclick="backToMain()"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToMain()"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-graduation-cap"></i>
-                    <h2>FERRAMENTAS EDUCACIONAIS</h2>
+                    <h2>Ferramentas educacionais</h2>
                 </div>
                 <div class="submenu-grid">
                     <div class="submenu-item" onclick="showDetails('detalhes-khan')">
                         <i class="fas fa-university"></i>
-                        <span>KHAN ACADEMY - Cursos gratuitos</span>
+                        <span>Khan Academy - Cursos gratuitos</span>
                     </div>
                     <div class="submenu-item" onclick="showDetails('detalhes-duolingo')">
                         <i class="fas fa-language"></i>
-                        <span>DUOLINGO - Aprendizado de idiomas</span>
+                        <span>Duolingo - Aprendizado de idiomas</span>
                     </div>
                     <div class="submenu-item" onclick="showDetails('detalhes-wolfram')">
                         <i class="fas fa-square-root-alt"></i>
-                        <span>WOLFRAM ALPHA - Resolução matemática</span>
+                        <span>Wolfram Alpha - Resolução matemática</span>
                     </div>
                     <div class="submenu-item" onclick="showDetails('detalhes-anki')">
                         <i class="fas fa-layer-group"></i>
-                        <span>ANKI - Flashcards inteligentes</span>
+                        <span>Anki - Flashcards inteligentes</span>
                     </div>
                     <div class="submenu-item" onclick="showDetails('detalhes-quizlet')">
                         <i class="fas fa-puzzle-piece"></i>
-                        <span>QUIZLET - Ferramentas de estudo</span>
+                        <span>Quizlet - Ferramentas de estudo</span>
                     </div>
                     <div class="submenu-item" onclick="showDetails('detalhes-brainly')">
                         <i class="fas fa-users"></i>
-                        <span>BRAINLY - Comunidade estudantil</span>
+                        <span>Brainly - Comunidade estudantil</span>
                     </div>
                     <div class="submenu-item" onclick="showDetails('detalhes-geogebra')">
                         <i class="fas fa-shapes"></i>
-                        <span>GEOGEBRA - Matemática interativa</span>
+                        <span>GeoGebra - Matemática interativa</span>
                     </div>
                 </div>
             </div>
             
             <div id="detalhes-khan" class="details">
-                <div class="back-btn btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-university"></i>
-                    <h2>KHAN ACADEMY - DETALHES</h2>
+                    <h2>Khan Academy - Detalhes</h2>
                 </div>
-                <p>Plataforma gratuita com cursos de matemática, ciências and programação. Conteúdo em português com exercícios.</p>
+                <p>Plataforma gratuita com cursos de matemática, ciências e programação. Conteúdo em português com exercícios.</p>
                 <div class="btn-container">
-                    <a href="https://pt.khanacademy.org/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
-                    <div class="btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
-                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+                    <a href="https://pt.khanacademy.org/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Acessar</a>
+                    <div class="btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> Voltar</div>
+                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> Menu principal</div>
                 </div>
             </div>
             
             <div id="detalhes-duolingo" class="details">
-                <div class="back-btn btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-language"></i>
-                    <h2>DUOLINGO - DETALHES</h2>
+                    <h2>Duolingo - Detalhes</h2>
                 </div>
                 <p>Aplicativo para aprender idiomas com lições curtas e gamificação. Suporta mais de 30 idiomas.</p>
                 <div class="btn-container">
-                    <a href="https://pt.duolingo.com/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
-                    <div class="btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
-                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+                    <a href="https://pt.duolingo.com/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Acessar</a>
+                    <div class="btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> Voltar</div>
+                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> Menu principal</div>
                 </div>
             </div>
             
             <div id="detalhes-wolfram" class="details">
-                <div class="back-btn btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-square-root-alt"></i>
-                    <h2>WOLFRAM ALPHA - DETALHES</h2>
+                    <h2>Wolfram Alpha - Detalhes</h2>
                 </div>
                 <p>Ferramenta computacional para resolver problemas de matemática, física e engenharia com passo a passo.</p>
                 <div class="btn-container">
-                    <a href="https://www.wolframalpha.com/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
-                    <div class="btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
-                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+                    <a href="https://www.wolframalpha.com/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Acessar</a>
+                    <div class="btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> Voltar</div>
+                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> Menu principal</div>
                 </div>
             </div>
             
             <div id="detalhes-anki" class="details">
-                <div class="back-btn btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-layer-group"></i>
-                    <h2>ANKI - DETALHES</h2>
+                    <h2>Anki - Detalhes</h2>
                 </div>
                 <p>Sistema de repetição espaçada para memorização eficiente com suporte a imagens, áudio e formatação avançada.</p>
                 <div class="btn-container">
-                    <a href="https://apps.ankiweb.net/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
-                    <div class="btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
-                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+                    <a href="https://apps.ankiweb.net/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Acessar</a>
+                    <div class="btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> Voltar</div>
+                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> Menu principal</div>
                 </div>
             </div>
             
             <div id="detalhes-quizlet" class="details">
-                <div class="back-btn btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-puzzle-piece"></i>
-                    <h2>QUIZLET - DETALHES</h2>
+                    <h2>Quizlet - Detalhes</h2>
                 </div>
                 <p>Plataforma de estudo com flashcards, jogos e testes para diversas disciplinas e níveis de ensino.</p>
                 <div class="btn-container">
-                    <a href="https://quizlet.com/pt-br" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
-                    <div class="btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
-                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+                    <a href="https://quizlet.com/pt-br" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Acessar</a>
+                    <div class="btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> Voltar</div>
+                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> Menu principal</div>
                 </div>
             </div>
             
             <div id="detalhes-brainly" class="details">
-                <div class="back-btn btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-users"></i>
-                    <h2>BRAINLY - DETALHES</h2>
+                    <h2>Brainly - Detalhes</h2>
                 </div>
                 <p>Comunidade de estudantes para compartilhar conhecimento e tirar dúvidas em diversas disciplinas escolares.</p>
                 <div class="btn-container">
-                    <a href="https://brainly.com.br/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
-                    <div class="btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
-                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+                    <a href="https://brainly.com.br/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Acessar</a>
+                    <div class="btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> Voltar</div>
+                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> Menu principal</div>
                 </div>
             </div>
             
             <div id="detalhes-geogebra" class="details">
-                <div class="back-btn btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-shapes"></i>
-                    <h2>GEOGEBRA - DETALHES</h2>
+                    <h2>GeoGebra - Detalhes</h2>
                 </div>
                 <p>Software matemático interativo para geometria, álgebra e cálculo. Versões para desktop e online.</p>
                 <div class="btn-container">
-                    <a href="https://www.geogebra.org/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ACESSAR</a>
-                    <div class="btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> VOLTAR</div>
-                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> MENU PRINCIPAL</div>
+                    <a href="https://www.geogebra.org/" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Acessar</a>
+                    <div class="btn" onclick="backToSubmenu('submenu-edu')"><i class="fas fa-arrow-left"></i> Voltar</div>
+                    <div class="btn" onclick="backToMain()"><i class="fas fa-home"></i> Menu principal</div>
                 </div>
             </div>
             
             <div id="descricao-geral" class="details">
-                <div class="back-btn btn" onclick="backToMain()"><i class="fas fa-arrow-left"></i> VOLTAR</div>
+                <div class="back-btn btn" onclick="backToMain()"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-info-circle"></i>
-                    <h2>EDUTOOLS - V2.5 (2025) - DESCRIÇÃO DAS FERRAMENTAS</h2>
+                    <h2>EduTools - V2.5 (2025) - Descrição das ferramentas</h2>
                 </div>
-                <p><strong>NAPKIN AI:</strong> Ferramenta para criação de relatórios e tabelas</p>
-                <p><strong>GAMMA AI:</strong> Criação de apresentações automáticas</p>
-                <p><strong>FLEXCLIP:</strong> Editor para gráficos and infográficos</p>
-                <p><strong>DREAMINA:</strong> Geração de imagens e vídeos via IA</p>
-                <p><strong>COPILOT:</strong> Assistente de IA para pesquisas</p>
-                <p><strong>DEEPSEEK:</strong> Cálculos matemáticos e análise de dados</p>
-                <p><strong>STIRLING PDF:</strong> Manipulação de PDFs com privacidade</p>
-                <p><strong>CO-STORM:</strong> Gerador de artigos acadêmicos</p>
-                <p><strong>LIBREOFFICE:</strong> Suite Office código-aberto</p>
-                <p><strong>NOTION:</strong> Plataforma para organização e planejamento</p>
-                <p><strong>CHATPDF:</strong> Leitor inteligente de PDFs</p>
-                <p><strong>PHET SIMULAÇÕES:</strong> Simulações interativas educativas</p>
-                <p><strong>GOOGLE DOCS:</strong> Editor de documentos online</p>
-                <p><strong>GOOGLE ACADÉMICO:</strong> Pesquisa de literatura científica</p>
-                <p><strong>CHATGPT:</strong> Assistente para conversas naturais</p>
-                <p><strong>GEMINI:</strong> Assistente do Google integrado</p>
-                <p><strong>ARCHIMEDS:</strong> Plataforma para estudos médicos</p>
-                <p><strong>KHAN ACADEMY:</strong> Cursos gratuitos online</p>
-                <p><strong>DUOLINGO:</strong> Aprendizado de idiomas</p>
-                <p><strong>WOLFRAM ALPHA:</strong> Resolução de problemas matemáticos</p>
-                <p><strong>ANKI:</strong> Flashcards para memorização</p>
-                <p><strong>QUIZLET:</strong> Ferramentas de estudo gamificadas</p>
-                <p><strong>BRAINLY:</strong> Comunidade de estudantes</p>
-                <p><strong>GEOGEBRA:</strong> Matemática interativa</p>
+                <p><strong>Napkin AI:</strong> Ferramenta para criação de relatórios e tabelas</p>
+                <p><strong>Gamma AI:</strong> Criação de apresentações automáticas</p>
+                <p><strong>FlexClip:</strong> Editor para gráficos e infográficos</p>
+                <p><strong>Dreamina:</strong> Geração de imagens e vídeos via IA</p>
+                <p><strong>Copilot:</strong> Assistente de IA para pesquisas</p>
+                <p><strong>DeepSeek:</strong> Cálculos matemáticos e análise de dados</p>
+                <p><strong>Stirling PDF:</strong> Manipulação de PDFs com privacidade</p>
+                <p><strong>Co-Storm:</strong> Gerador de artigos acadêmicos</p>
+                <p><strong>LibreOffice:</strong> Suite Office código-aberto</p>
+                <p><strong>Notion:</strong> Plataforma para organização e planejamento</p>
+                <p><strong>ChatPDF:</strong> Leitor inteligente de PDFs</p>
+                <p><strong>PhET Simulações:</strong> Simulações interativas educativas</p>
+                <p><strong>Google Docs:</strong> Editor de documentos online</p>
+                <p><strong>Google Acadêmico:</strong> Pesquisa de literatura científica</p>
+                <p><strong>ChatGPT:</strong> Assistente para conversas naturais</p>
+                <p><strong>Gemini:</strong> Assistente do Google integrado</p>
+                <p><strong>Archimeds:</strong> Plataforma para estudos médicos</p>
+                <p><strong>Khan Academy:</strong> Cursos gratuitos online</p>
+                <p><strong>Duolingo:</strong> Aprendizado de idiomas</p>
+                <p><strong>Wolfram Alpha:</strong> Resolução de problemas matemáticos</p>
+                <p><strong>Anki:</strong> Flashcards para memorização</p>
+                <p><strong>Quizlet:</strong> Ferramentas de estudo gamificadas</p>
+                <p><strong>Brainly:</strong> Comunidade de estudantes</p>
+                <p><strong>GeoGebra:</strong> Matemática interativa</p>
             </div>
         </main>
         
