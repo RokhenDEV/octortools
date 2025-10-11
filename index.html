@@ -392,15 +392,6 @@
             background-color: #222222;
         }
         
-        .gmail-btn {
-            background-color: #bb001b;
-            border-color: #d93025;
-        }
-        
-        .gmail-btn:hover {
-            background-color: #d93025;
-        }
-        
         @media (max-width: 768px) {
             .menu {
                 grid-template-columns: 1fr;
@@ -1110,7 +1101,7 @@
                 <div class="back-btn btn" onclick="backToMain()"><i class="fas fa-arrow-left"></i> Voltar</div>
                 <div class="section-title">
                     <i class="fas fa-info-circle"></i>
-                    <h2>OctorTools - V2.5 (2025)</h2>
+                    <h2>OctorTools - V1.0 (2025)</h2>
                 </div>
                 <p><strong>Napkin AI:</strong> Ferramenta para criação de relatórios e tabelas</p>
                 <p><strong>Gamma AI:</strong> Criação de apresentações automáticas</p>
@@ -1141,15 +1132,12 @@
         
         <footer>
             Desenvolvido por João Samuel & Maria Vitória<br>
-            Versão 2.5 - 2025<br>
-            Este site foi testado no Windows, Linux, Android e iPhone<br>
+            Versão 1.0 - 2025<br>
+            Contato: octortools@gmail.com<br>
             
             <div class="footer-buttons">
-                <a href="https://github.com/JSofc/EduTools" target="_blank" class="footer-btn github-btn">
+                <a href="https://github.com/octortools/octor" target="_blank" class="footer-btn github-btn">
                     <i class="fab fa-github"></i> OctorTools
-                </a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=edutools.ofc@gmail.com" target="_blank" class="footer-btn gmail-btn">
-                    <i class="fas fa-envelope"></i> edutools.ofc
                 </a>
             </div>
         </footer>
@@ -1209,7 +1197,6 @@
         }
         
         function updateDisplay() {
-            // Esconde todos os elementos
             hideAllSubmenus();
             hideAllDetails();
             document.getElementById('menu-principal').style.display = 'none';
