@@ -66,7 +66,7 @@ Consulte o arquivo `LICENSE` para mais detalhes.
 Tem sugestões, ideias ou quer contribuir com o projeto?  
 Entre em contato:
 
-**Email:** edutools.ofc@gmail.com
+**Email:** octortools@gmail.com
 
 ---
 
