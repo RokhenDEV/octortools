@@ -1,9 +1,9 @@
-# 📚 EduTools - Central Educacional e de Produtividade
+# 📚 OctorTools - Central Educacional e de Produtividade
 
 ![Badge Status](https://img.shields.io/badge/status-em%20desenvolvimento-blue)
 ![Badge Licença](https://img.shields.io/badge/licen%C3%A7a-MIT-green)
 
-**EduTools** é um projeto gratuito desenvolvido em **HTML** que reúne, em um só lugar, ferramentas online para educação, produtividade e inteligência artificial.
+**OctorTools** é um projeto gratuito desenvolvido em **HTML** que reúne, em um só lugar, ferramentas online para educação, produtividade e inteligência artificial.
 
 > Interface moderna, responsiva e acessível diretamente pelo navegador.
 
@@ -42,7 +42,7 @@
 
 ## 🔗 Link do Projeto:
 
-➡️ https://jsofc.github.io/EduTools/
+➡️ ...
 
 ---
 
