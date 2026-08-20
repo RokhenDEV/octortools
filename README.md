@@ -61,15 +61,6 @@ Consulte o arquivo `LICENSE` para mais detalhes.
 
 ---
 
-## 📬 Contato e Colaboração
-
-Tem sugestões, ideias ou quer contribuir com o projeto?  
-Entre em contato:
-
-**Email:** octortools@gmail.com
-
----
-
 ## 🙏 Agradecimentos
 
 Que Deus abençoe todos que fazem parte desta jornada.  
