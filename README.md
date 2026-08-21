@@ -50,19 +50,18 @@
 - Ao utilizar, você concorda em fazer uso responsável e ético das ferramentas acessadas.
 
 ---
-
 ## 📄 Licença
 
-Este projeto está licenciado sob a MIT License – isso significa que você pode usar, copiar, modificar, distribuir e até mesmo usar em projetos comerciais, desde que mantenha o aviso de copyright original.
+Este projeto está licenciado sob a **MIT License** – isso significa que você pode usar, copiar, modificar, distribuir e até mesmo usar em projetos comerciais, desde que mantenha o aviso de copyright original.
 
-Consulte o arquivo LICENSE para os termos completos.
+Consulte o arquivo [LICENSE](LICENSE) para os termos completos.
 
 ---
 
 ## 📬 Contato
 
-    Telegram: t.me/RokhenDEV
-    E-mail: rokhendev@gmail.com
+- **Telegram**: [t.me/RokhenDEV](https://t.me/RokhenDEV)
+- **E-mail**: rokhendev@gmail.com
 
 Fique à vontade para entrar em contato para dúvidas, sugestões ou parcerias!
 
@@ -70,7 +69,7 @@ Fique à vontade para entrar em contato para dúvidas, sugestões ou parcerias!
 
 ## 🙏 Agradecimentos
 
-    A todos que usam e compartilham projetos open source.
-    Comunidade de desenvolvedores que inspiram diariamente.
+- A todos que usam e compartilham projetos open source.
+- Comunidade de desenvolvedores que inspiram diariamente.
 
-Feito com ❤️ por Rokhen
+Feito com ❤️ por **Rokhen**
